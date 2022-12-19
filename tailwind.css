@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+@layer components {
+	.grid-component {
+		@apply h-full py-16 px-12;
+	}
+	.grid-component img {
+		@apply scale-125 mb-10;
+	}
+	.grid-component h1 {
+		@apply font-Big_Shoulders_Display font-bold text-4xl uppercase mb-8;
+	}
+	.grid-component p {
+		@apply font-Lexend_Deca font-normal text-base;
+	}
+	.grid-component button {
+		@apply bg-Very_light_gray rounded-full px-10 py-3 lg:mt-32 mt-6 capitalize transition-all font-Lexend_Deca font-normal 
+        border-2 border-solid border-Very_light_gray hover:bg-transparent hover:text-Very_light_gray;
+	}
+}
